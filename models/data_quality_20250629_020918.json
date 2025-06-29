@@ -1,0 +1,44 @@
+{
+  "has_nan": true,
+  "has_inf": false,
+  "n_features": 8,
+  "n_samples": 3633,
+  "class_balance": {
+    "0": 0.8830167905312414,
+    "1": 0.1169832094687586
+  },
+  "feature_ranges": {
+    "recency": {
+      "min": 0.0,
+      "max": 90.0
+    },
+    "frequency": {
+      "min": 1.0,
+      "max": 30893.0
+    },
+    "monetary_total": {
+      "min": 100.0,
+      "max": 112615450.0
+    },
+    "monetary_mean": {
+      "min": 100.0,
+      "max": 8601821.142857144
+    },
+    "monetary_std": {
+      "min": 0.0,
+      "max": 3309916.123615392
+    },
+    "frequency_recency_ratio": {
+      "min": 0.0109890109890109,
+      "max": 30893.0
+    },
+    "monetary_consistency": {
+      "min": 3.021224594982808e-07,
+      "max": 1000000.0
+    },
+    "fraud_count": {
+      "min": 0.0,
+      "max": 31.0
+    }
+  }
+}
