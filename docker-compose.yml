@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  credit-api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - MODEL_PATH=./models/credit_risk_model_logistic.pkl
+    volumes:
+      - ./models:/app/models
+      - ./data/processed:/app/data/processed
+    restart: unless-stopped
+
+  # Add other services like Redis for caching if needed
