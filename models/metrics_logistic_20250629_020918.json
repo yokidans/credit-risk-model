@@ -1,0 +1,119 @@
+{
+  "roc_auc": 0.9704874473153748,
+  "average_precision": 0.7906201273174671,
+  "classification_report": {
+    "0": {
+      "precision": 0.9684542586750788,
+      "recall": 0.956386292834891,
+      "f1-score": 0.9623824451410659,
+      "support": 642.0
+    },
+    "1": {
+      "precision": 0.6989247311827957,
+      "recall": 0.7647058823529411,
+      "f1-score": 0.7303370786516854,
+      "support": 85.0
+    },
+    "accuracy": 0.9339752407152683,
+    "macro avg": {
+      "precision": 0.8336894949289373,
+      "recall": 0.860546087593916,
+      "f1-score": 0.8463597618963756,
+      "support": 727.0
+    },
+    "weighted avg": {
+      "precision": 0.9369411777440692,
+      "recall": 0.9339752407152683,
+      "f1-score": 0.9352519690040682,
+      "support": 727.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      614,
+      28
+    ],
+    [
+      20,
+      65
+    ]
+  ],
+  "best_threshold": 0.07062880622202657,
+  "convergence_info": {
+    "data_quality": {
+      "has_nan": true,
+      "has_inf": false,
+      "n_features": 8,
+      "n_samples": 3633,
+      "class_balance": {
+        "0": 0.8830167905312414,
+        "1": 0.1169832094687586
+      },
+      "feature_ranges": {
+        "recency": {
+          "min": 0.0,
+          "max": 90.0
+        },
+        "frequency": {
+          "min": 1.0,
+          "max": 30893.0
+        },
+        "monetary_total": {
+          "min": 100.0,
+          "max": 112615450.0
+        },
+        "monetary_mean": {
+          "min": 100.0,
+          "max": 8601821.142857144
+        },
+        "monetary_std": {
+          "min": 0.0,
+          "max": 3309916.123615392
+        },
+        "frequency_recency_ratio": {
+          "min": 0.0109890109890109,
+          "max": 30893.0
+        },
+        "monetary_consistency": {
+          "min": 3.021224594982808e-07,
+          "max": 1000000.0
+        },
+        "fraud_count": {
+          "min": 0.0,
+          "max": 31.0
+        }
+      }
+    },
+    "attempts": [
+      {
+        "strategy": "initial",
+        "max_iter": 10000,
+        "tol": 0.001,
+        "solver": "saga",
+        "converged": false
+      },
+      {
+        "strategy": "increase_iterations",
+        "max_iter": 20000,
+        "tol": 0.001,
+        "solver": "saga",
+        "converged": false
+      },
+      {
+        "strategy": "relax_tolerance",
+        "max_iter": 20000,
+        "tol": 0.01,
+        "solver": "saga",
+        "converged": false
+      },
+      {
+        "strategy": "change_solver",
+        "max_iter": 20000,
+        "tol": 0.01,
+        "solver": "lbfgs",
+        "converged": true
+      }
+    ],
+    "final_convergence": true
+  }
+}
