@@ -50,19 +50,19 @@ graph TD
   
 ## Project Structure
 ### credit-risk-model/
-### ├── .github/workflows/        # CI/CD pipelines
-### ├── data/                     # Data storage (gitignored)
-### │   ├── raw/                  # Original datasets
-### │   └── processed/            # Model-ready features
-### ├── notebooks/                # Exploratory analysis
-### │   └── 1.0-eda.ipynb         # Jupyter notebook
-### ├── src/                      # Production code
-### │   ├── data_processing.py    # Feature engineering
-### │   ├── train.py              # Model training
-### │   └── api/                  # Prediction service
-### ├── tests/                    # Test suite
-### ├── Dockerfile                # Container setup
-### └── docker-compose.yml        # Service orchestration
+### ├── .github/workflows/                 # CI/CD pipelines
+### ├── data/                              # Data storage (gitignored)
+### │   ├── raw/                           # Original datasets
+### │   └── processed/                     # Model-ready features
+### ├── notebooks/                         # Exploratory analysis
+### │   └── 1.0-eda.ipynb                  # Jupyter notebook
+### ├── src/                               # Production code
+### │   ├── data_processing.py             # Feature engineering
+### │   ├── train.py                       # Model training
+### │   └── api/                           # Prediction service
+### ├── tests/                             # Test suite
+### ├── Dockerfile                         # Container setup
+### └── docker-compose.yml                 # Service orchestration
 
 ## Model Comparison
 
