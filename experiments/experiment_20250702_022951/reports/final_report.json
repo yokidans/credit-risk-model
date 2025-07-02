@@ -1,0 +1,124 @@
+{
+    "experiment_name": "experiment_20250702_022951",
+    "date": "2025-07-02 03:21:27",
+    "dataset_stats": {
+        "total_samples": 10000,
+        "fraud_rate": 0.0105,
+        "features_used": 28,
+        "train_samples": 8707,
+        "test_samples": 2000,
+        "resampled_train_samples": 8707
+    },
+    "model_performance": {
+        "RandomForest": {
+            "accuracy": 0.986,
+            "precision": 0.18181818181818182,
+            "recall": 0.09523809523809523,
+            "f1": 0.125,
+            "roc_auc": 0.9112707235496523,
+            "pr_auc": 0.12471594000362982,
+            "brier_score": 0.013334618044412602,
+            "best_params": {
+                "classifier__n_estimators": 200,
+                "classifier__max_depth": 25,
+                "classifier__min_samples_split": 2,
+                "classifier__max_features": "sqrt"
+            }
+        },
+        "XGBoost": {
+            "accuracy": 0.9885,
+            "precision": 0.4166666666666667,
+            "recall": 0.23809523809523808,
+            "f1": 0.30303030303030304,
+            "roc_auc": 0.9091652830915085,
+            "pr_auc": 0.3118813649944357,
+            "brier_score": 0.00942463167242902,
+            "best_params": {
+                "classifier__n_estimators": 300,
+                "classifier__max_depth": 9,
+                "classifier__learning_rate": 0.09208693975017121,
+                "classifier__subsample": 0.9,
+                "classifier__colsample_bytree": 0.9,
+                "classifier__gamma": 0.1
+            }
+        },
+        "LightGBM": {
+            "accuracy": 0.9905,
+            "precision": 0.6,
+            "recall": 0.2857142857142857,
+            "f1": 0.3870967741935484,
+            "roc_auc": 0.8838999975937823,
+            "pr_auc": 0.32506870238826097,
+            "brier_score": 0.008641224364768618,
+            "best_params": {
+                "classifier__n_estimators": 300,
+                "classifier__max_depth": 15,
+                "classifier__learning_rate": 0.09284434417830616,
+                "classifier__num_leaves": 61,
+                "classifier__feature_fraction": 0.8
+            }
+        },
+        "CatBoost": {
+            "accuracy": 0.9905,
+            "precision": 0.5833333333333334,
+            "recall": 0.3333333333333333,
+            "f1": 0.42424242424242425,
+            "roc_auc": 0.8717967227315383,
+            "pr_auc": 0.3353400125251616,
+            "brier_score": 0.008593945361909633,
+            "best_params": {
+                "classifier__iterations": 498,
+                "classifier__depth": 10,
+                "classifier__learning_rate": 0.04533674865179426
+            }
+        }
+    },
+    "basel_metrics": {
+        "RandomForest": {
+            "risk_coverage": 0.3527706001116644,
+            "capital_adequacy": 4.20224618752569,
+            "total_expected_loss": 956.9081872231311,
+            "total_actual_loss": 227.7135,
+            "risk_weighted_assets": 11961.352340289139,
+            "num_fraud_cases": 21,
+            "avg_expected_loss": 0.47845409361156555,
+            "avg_actual_loss": 10.8435
+        },
+        "XGBoost": {
+            "risk_coverage": 0.4400579757163976,
+            "capital_adequacy": 1.4661479977466148,
+            "total_expected_loss": 333.86169208487377,
+            "total_actual_loss": 227.7135,
+            "risk_weighted_assets": 4173.271151060922,
+            "num_fraud_cases": 21,
+            "avg_expected_loss": 0.16693084604243688,
+            "avg_actual_loss": 10.8435
+        },
+        "LightGBM": {
+            "risk_coverage": 0.42341679179273767,
+            "capital_adequacy": 0.9540464719468291,
+            "total_expected_loss": 217.24926128966428,
+            "total_actual_loss": 227.7135,
+            "risk_weighted_assets": 2715.6157661208035,
+            "num_fraud_cases": 21,
+            "avg_expected_loss": 0.10862463064483213,
+            "avg_actual_loss": 10.8435
+        },
+        "CatBoost": {
+            "risk_coverage": 0.5393796828558406,
+            "capital_adequacy": 1.4733506914352938,
+            "total_expected_loss": 335.5018426741508,
+            "total_actual_loss": 227.7135,
+            "risk_weighted_assets": 4193.773033426885,
+            "num_fraud_cases": 21,
+            "avg_expected_loss": 0.1677509213370754,
+            "avg_actual_loss": 10.8435
+        }
+    },
+    "best_models": [
+        "RandomForest",
+        "XGBoost",
+        "LightGBM",
+        "CatBoost"
+    ]
+}
